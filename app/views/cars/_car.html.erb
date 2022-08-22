@@ -1,0 +1,7 @@
+<tr >
+  <td class="bg-gray-100 px-2 py-2"><%= link_to car.number, car_path(car) %></td>
+  <td class="px-2 py-2"><%= car.type_of %></td>
+  <td class="px-2 py-2"><%= car.train_id %></td>
+  <td class="bg-gray-100 px-2 py-2"><%=  car.train_id.nil? ? t('.unchained') : t('.chained')%></td>
+  <td class="px-2 py-2"><%= link_to t('general.edit'), edit_car_path(car) %> | <%= link_to t("general.remove"), car_path(car), data: {"turbo-method": :delete}, form: { data: { turbo_confirm: "Are you sure?" } }  %> </td>
+</tr>

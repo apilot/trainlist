@@ -1,0 +1,14 @@
+<tr >
+  <td class="bg-gray-100 px-2 py-2"><%= link_to train.number, train_path(train) %></td>
+  <td class="px-2 py-2"><%= train.type_of %></td>
+  <td class="bg-gray-100 px-2 py-2"><%= link_to train.route&.name, route_path(train.route)%></td>
+  <td class="px-2 py-2">
+    <ul>
+      <% train.cars.each do |car| %>
+        <li><%= car.number %></li>
+      <% end %>
+    </ul>
+  </td>
+  <td class="bg-gray-100 px-2 py-2"><%= train.car_max %></td>
+  <td><%= link_to t('general.edit'), edit_train_path(train) %> | <%= link_to t("general.remove"), train_path(train), data: {"turbo-method": :delete}, form: { data: { turbo_confirm: "Are you sure?" } }  %> </td>
+</tr>

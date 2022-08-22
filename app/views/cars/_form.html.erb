@@ -1,0 +1,33 @@
+<%= simple_form_for (@car) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="form-inputs pb-[200px]">
+    <div class="mb-6">
+      <h4 class="mb-2"><%= f.label :number, t('.number') %></h4>
+      <div>
+        <%= f.input :number,
+          label: false,
+          input_html: {
+            class: "input input-sm w-full",
+            placeholder: t('general.text_placeholder')
+          } %>
+      </div>
+    </div>
+    <div class="">
+      <h4 class="mb-2"><%= f.label :type_of, t('.type_of') %></h4>
+      <div class="select-sm w-[300px]">
+        <%= f.input :type_of,
+          label: false,
+          collection: Car.type_ofs.keys
+           %>
+      </div>
+    </div>
+    <div class="py-2">
+      
+    <%= link_to t('general.cancel'), :back%>
+    <%= f.submit t('general.save'), class: "group relative w-200 justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" %>
+    </div>
+  </div>
+<% end %>
+

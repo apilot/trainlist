@@ -1,0 +1,11 @@
+<tr >
+  <td class="bg-gray-100 px-2 py-2"><%= link_to route.name, route_path(route) %></td>
+  <td class="px-2 py-2">
+    <ul>
+      <% route.stations.each do |station| %>
+        <li><%= station.name %></li>
+      <% end %>
+    </ul>
+  </td>
+  <td class="bg-gray-100 px-2 py-2"><%= link_to t('general.edit'), edit_route_path(route) %> | <%= link_to t("general.remove"), route_path(route), data: {"turbo-method": :delete}, form: { data: { turbo_confirm: "Are you sure?" } }  %> </td>
+</tr>

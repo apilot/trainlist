@@ -1,0 +1,11 @@
+<table class="w-full divide-y divide-gray-300">
+  <thead>
+    <tr>
+      <th><%= t('.route_name') %></th>
+      <th><%= t('.stations') %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render partial: "route", collection: @routs %>
+  </tbody>
+</table>

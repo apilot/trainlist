@@ -1,0 +1,82 @@
+---
+en:
+  cars:
+    car:
+      chained: Chained
+      unchained: Unchained
+    form:
+      category: Category
+      number: Number
+      type_of: Type of
+    index:
+      car_number: Car number
+      type_of: Type of
+    show:
+      car_details: Car details
+      car_number: Car number
+      cars_information: Cars information
+      type_of: Type of
+  general:
+    add: Add
+    back: Back
+    cancel: Cancel
+    edit: Edit
+    remove: Remove
+    save: Save
+    successfully_update_msg: Successfully update msg
+    sucsessfully_create_msg: Sucsessfully create msg
+    text_placeholder: Text placeholder
+  hello: Hello world
+  routes:
+    form:
+      name: Name
+      station: Station
+    index:
+      route_name: Route name
+      stations: Stations
+    show:
+      route_details: Route details
+      route_information: Route information
+      route_name: Route name
+      stations: Stations
+  shared:
+    nav:
+      cars: Cars
+      main: Main
+      routes: Routes
+      stations: Stations
+      trains: Trains
+  stations:
+    form:
+      name: Name
+    index:
+      name: Name
+      route: Route
+      trains: Trains
+    show:
+      routes: Routes
+      station_details: Station details
+      station_name: Station name
+      stations_information: Stations information
+  trains:
+    form:
+      car_max: Car max
+      category: Category
+      number: Number
+      route: Route
+      station: Station
+      type_of: Type of
+    index:
+      cars_list: Cars list
+      max_cars: Max cars
+      route: Route
+      train_number: Train number
+      type_of: Type of
+    show:
+      current_station: Current station
+      max_cars: Max cars
+      route_name: Route name
+      train_details: Train details
+      train_information: Train information
+      train_number: Train number
+      type_of: Type of

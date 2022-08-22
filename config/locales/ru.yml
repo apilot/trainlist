@@ -1,0 +1,82 @@
+---
+ru:
+  cars:
+    car:
+      chained: Прицелен
+      unchained: Свободный
+    form:
+      category: Категория
+      number: Номер
+      type_of: Тип вагона
+    index:
+      car_number: Инв. номер вагона
+      type_of: Тип вагона
+    show:
+      car_details: Подробнее о вагоне
+      car_number: Инв. номер
+      cars_information: Информация о вагоне
+      type_of: Тип вагона
+  general:
+    add: Добавить
+    back: Вернуться
+    cancel: Отменить
+    edit: Редактировать
+    remove: Удалить
+    save: Сохранить
+    successfully_update_msg: Успешно обновлено
+    sucsessfully_create_msg: Успешно создано
+    text_placeholder: Введите текст
+  hello: Привет мир!
+  routes:
+    form:
+      name: Наименование
+      station: Станция
+    index:
+      route_name: Наименование маршрута
+      stations: Станции
+    show:
+      route_details: Детали маршрута
+      route_information: Информация о маршруте
+      route_name: Наименование маршрута
+      stations: Станции
+  shared:
+    nav:
+      cars: Вагоны
+      main: Главная
+      routes: Маршруты
+      stations: Станции
+      trains: Поезда
+  stations:
+    form:
+      name: Наименование станции
+    index:
+      name: Наименование
+      route: Маршрут
+      trains: Поезда
+    show:
+      routes: Маршруты
+      station_details: Детали станции
+      station_name: Наименование станции
+      stations_information: Информация о станции
+  trains:
+    form:
+      car_max: Макс. вагонов
+      category: Категория
+      number: Номер
+      route: Маршрут
+      station: Станция
+      type_of: Тип поезда
+    index:
+      cars_list: Список вагонов
+      max_cars: Макс. вагонов
+      route: Маршрут
+      train_number: Номер поезда
+      type_of: Тип поезда
+    show:
+      current_station: Текущая станция
+      max_cars: Макс. вагонов
+      route_name: Наименование мрашрутов
+      train_details: Детализация поезда
+      train_information: Информация о поезде
+      train_number: Номер поезда
+      type_of: Тип поезда
